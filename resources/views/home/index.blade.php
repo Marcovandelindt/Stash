@@ -7,7 +7,7 @@
             <h1>Welcome (back)!</h1>
             <p>Stash is currently in beta and is only accessible with an access code. What would you like to do?</p>
             <a class="btn btn-primary" href="#">Login</a>
-            <a class="btn btn-primary">Register</a>
+            <a class="btn btn-primary" href="{{ route('register') }}">Register</a>
         </div>
     </div>
 </div>
