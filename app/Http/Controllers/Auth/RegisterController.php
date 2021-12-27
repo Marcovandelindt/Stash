@@ -54,7 +54,7 @@ class RegisterController extends Controller
         $user           = new User();
         $user->name     = $name;
         $user->email    = $email;
-        $user->password = $password;
+        $user->password = Hash::make($password);
         $user->save();
 
         # Update access code to prevent further using
