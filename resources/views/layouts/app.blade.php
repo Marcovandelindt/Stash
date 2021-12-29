@@ -20,11 +20,19 @@
         rel="stylesheet">
 </head>
 <body class="g-sidenav-show g-sidenav-pinned">
+
+@auth
 @include('layouts.partials.sidebar')
+@endauth
+
 <div class="main-content" id="panel">
+
+    @auth
     @include('layouts.partials.topbar')
     @include('layouts.partials.header')
-    <div class="container mt--6">
+    @endauth
+
+    <div class="container @auth mt--6 @endauth">
         @yield('content')
     </div>
 </div>

@@ -22,7 +22,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">
+                            <a class="nav-link" href="{{ route('games') }}">
                                 <i class="fab fa-playstation"></i>
                                 <span class="nav-link-text">{{ __('Games') }}</span>
                             </a>
