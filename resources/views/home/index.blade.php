@@ -3,9 +3,9 @@
 @section('content')
 
     @if (Auth::check())
-        <div class="col-6 offset-3">
-            <div class="card card-frame mt-5">
-                <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <div class="card p-4">
                     <h2>Welcome back, {{ Auth::user()->name }}</h2>
                 </div>
             </div>
